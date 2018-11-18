@@ -10,7 +10,7 @@
 ## 旧书籍对象
 ```js
 {
-    "id": id,					     // [NoWrite]
+    "id": id,					      // [NoWrite]
     "page_view": 102,                 // [NoWrite]
     "created_at": timestamp           // [NoWrite]
     "title": "数字信号处理",		  // [Required]
@@ -21,7 +21,7 @@
     "wear_degree": "0",			   // [Required] "0": 较好, "1": 一般, "2": 严重
     "contact": "15521377055",         // [Required]
     "contact_type": "0",			  // [Required] "0": 手机, "1": 微信, "2": qq
-    
+
     // 注意：
     // Required字段都不能为空；
     // Optional字段可以不传，也可以为空
@@ -41,7 +41,7 @@
 
 ### 部分请求示例
 #### POST - 发布一个新的旧书籍信息
-```json
+```js
 {
 	"form-TOTAL_FORMS": "2",		  // 0-3范围内的一个值，具体看有多少张图片要传；这里假设2张照片要传
 	"form-INITIAL_FORMS": "0",		// 初始化的FORMS个数，固定为"0"就好
