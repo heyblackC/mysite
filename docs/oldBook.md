@@ -52,10 +52,10 @@ Content-Type: multipart/form-data
 	"form-INITIAL_FORMS": "0",    // 初始化的FORMS个数，固定为"0"就好
 	"form-MIN_NUM_FORMS": "0",    // 固定就好
 	"form-MAX_NUM_FORMS": "3",    // 最大上传的照片数，为3，固定
-  // ------------
-  "form-0-image": 图片文件1,     // 图片文件file
-  "form-1-image": 图片文件2,     // 命名规则：form-<id>-image，<id>最大为2
-  // ------------
+  	// ------------
+  	"form-0-image": 图片文件1,     // 图片文件file
+  	"form-1-image": 图片文件2,     // 命名规则：form-<id>-image，<id>最大为2
+  	// ------------
 	"author": "Sanjit K. Mitra",
 	"title": "数字信号处理",
 	"publisher": "电子工业出版社",
