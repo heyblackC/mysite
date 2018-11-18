@@ -65,7 +65,7 @@
 ### 响应
 #### POST - 发布成功
 会返回新建书籍信息的id、图片url及其他基本信息
-```json
+```js
 {
     "author": "sadqweqwewqe",
     "expires": "2019-12-11 17:17:10",
