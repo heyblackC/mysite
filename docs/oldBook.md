@@ -12,15 +12,15 @@
 {
     "id": id,                           // [NoWrite]
     "page_view": 102,                   // [NoWrite]
-    "created_at": timestamp             // [NoWrite]
-    "title": "数字信号处理",            // [Required]
-    "author": "Sanjit K. Mitra",       // [Required]
-    "publisher": "电子工业出版社",      // [Required]
-    "description": "这是一本...",      // [Optional]
-    "expires": "2016-12-11 17:17:10", // [Required]
-    "wear_degree": "0",               // [Required] "0": 较好, "1": 一般, "2": 严重
-    "contact": "15521377055",         // [Required]
-    "contact_type": "0",              // [Required] "0": 手机, "1": 微信, "2": qq
+    "created_at": timestamp,            // [NoWrite]
+    "title": "数字信号处理",             // [Required]
+    "author": "Sanjit K. Mitra",        // [Required]
+    "publisher": "电子工业出版社",       // [Required]
+    "description": "这是一本...",       // [Optional]
+    "expires": "2016-12-11 17:17:10",  // [Required]
+    "wear_degree": "0",                // [Required] "0": 较好, "1": 一般, "2": 严重
+    "contact": "15521377055",          // [Required]
+    "contact_type": "0",               // [Required] "0": 手机, "1": 微信, "2": qq
 
     // 注意：
     // Required字段都不能为空；
@@ -48,14 +48,14 @@ POST /book HTTP/1.1
 Content-Type: multipart/form-data
 ```js
 {
-	"form-TOTAL_FORMS": "2",		  // 0-3范围内的一个值，具体看有多少张图片要传；这里假设2张照片要传
-	"form-INITIAL_FORMS": "0",		// 初始化的FORMS个数，固定为"0"就好
-	"form-MIN_NUM_FORMS": "0",		// 固定就好
-	"form-MAX_NUM_FORMS": "3",		// 最大上传的照片数，为3，固定
-    // ------------
-    "form-0-image": 图片文件1,	// 图片文件file
-    "form-1-image": 图片文件2,	// 命名规则：form-<id>-image，<id>最大为2
-    // ------------
+	"form-TOTAL_FORMS": "2",      // 0-3范围内的一个值，具体看有多少张图片要传；这里假设2张照片要传
+	"form-INITIAL_FORMS": "0",    // 初始化的FORMS个数，固定为"0"就好
+	"form-MIN_NUM_FORMS": "0",    // 固定就好
+	"form-MAX_NUM_FORMS": "3",    // 最大上传的照片数，为3，固定
+  // ------------
+  "form-0-image": 图片文件1,     // 图片文件file
+  "form-1-image": 图片文件2,     // 命名规则：form-<id>-image，<id>最大为2
+  // ------------
 	"author": "Sanjit K. Mitra",
 	"title": "数字信号处理",
 	"publisher": "电子工业出版社",
