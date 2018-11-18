@@ -15,6 +15,7 @@
     * `[NoWrite]`  等同于 `[NoCreate, NoModify]`
     * `[Hidden]` 在返回资源信息时隐藏的字段（在数据库中存在但是不会返回给前端，如果完全由后端控制的字段也可能直接不写在文档中了）
     * `[Required]` 在 `POST` 请求创建资源时必须的字段，默认不能为blank
+    * `[Optional]` 在 `POST` 请求创建资源时的可选字段，可以为空，也可以不传
     * `[Default="xxx"]` 可选字段的默认值
     * `[ModifyRequired]` 在 `PATCH` 修改资源时必须带上的字段
 
