@@ -10,17 +10,17 @@
 ## 旧书籍对象
 ```js
 {
-    "id": id,					                 // [NoWrite]
-    "page_view": 102,                  // [NoWrite]
-    "created_at": timestamp            // [NoWrite]
-    "title": "数字信号处理",		        // [Required]
+    "id": id,                           // [NoWrite]
+    "page_view": 102,                   // [NoWrite]
+    "created_at": timestamp             // [NoWrite]
+    "title": "数字信号处理",            // [Required]
     "author": "Sanjit K. Mitra",       // [Required]
     "publisher": "电子工业出版社",      // [Required]
     "description": "这是一本...",      // [Optional]
     "expires": "2016-12-11 17:17:10", // [Required]
-    "wear_degree": "0",			          // [Required] "0": 较好, "1": 一般, "2": 严重
+    "wear_degree": "0",               // [Required] "0": 较好, "1": 一般, "2": 严重
     "contact": "15521377055",         // [Required]
-    "contact_type": "0",			        // [Required] "0": 手机, "1": 微信, "2": qq
+    "contact_type": "0",              // [Required] "0": 手机, "1": 微信, "2": qq
 
     // 注意：
     // Required字段都不能为空；
