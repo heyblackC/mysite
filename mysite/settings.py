@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'oldBook.apps.OldbookConfig',
-    'oldBook.middlewares',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'oldBook.middlewares.patch_middleware',
 ]
 
 ROOT_URLCONF = 'mysite.urls'
