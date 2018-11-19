@@ -1,5 +1,8 @@
 from django.db import models
 import hashlib
+import json
+
+WEB_URL = "http://www.oldBook.heyblack.top/"
 
 
 class Book(models.Model):
@@ -27,6 +30,31 @@ class Book(models.Model):
 
     class Meta:
         ordering = ['-created_at']
+
+    def dic_data(self):
+        image_set = []
+        for i in range(0, self.image_set.count()):
+            image_model = self.image_set.all()[i]
+            image_set.append(WEB_URL + image_model.image.url)
+
+        json_dic = {
+            "id": self.id,
+            "page_view": self.page_view,
+            "created_at": self.created_at.strftime("%Y-%m-%d %H:%M:%S"),
+            "title": self.title,
+            "author": self.author,
+            "publisher": self.publisher,
+            "description": self.description,
+            "expires": self.expires.strftime("%Y-%m-%d %H:%M:%S"),
+            "wear_degree": self.wear_degree,
+            "contact": self.contact,
+            "contact_type": self.contact_type,
+            "image_set": image_set
+        }
+        return json_dic
+
+    def json_data(self):
+        return json.dumps(self.dic_data())
 
 
 def get_hash_filename(instance, filename):
