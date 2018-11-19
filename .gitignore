@@ -1,2 +1,4 @@
 images/
 *.sqlite3
+*.pyc
+.idea/
