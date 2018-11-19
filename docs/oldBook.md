@@ -3,8 +3,8 @@
 |简述|URI与操作|备注|
 |-|-|-|
 |项目根URL|http://www.oldBook.heyblack.top|项目的根URL，其他路径均相对于根URL而言|
-|旧书籍信息|`Resource: /book`|允许`GET, POST, PATCH, DELETE`|
-|用户信息|`Resource: /me`|允许 `GET, PATCH`|
+|旧书籍资源|`Resource: /book/`|允许`GET, POST`|
+|单个旧书籍资源|`Resource: /book/<id>`|允许 `GET, PATCH, DELETE`|
 
 ---
 ## 旧书籍对象
@@ -31,7 +31,7 @@
 
 ---
 
-## 对旧书籍资源进行操作 /book
+## 对旧书籍资源进行操作 /book/
 
 ### 允许的操作
 * GET
@@ -43,7 +43,9 @@
 
 ### 部分请求示例
 #### POST - 发布一个新的旧书籍信息
-POST /book HTTP/1.1
+POST /book/ HTTP/1.1
+
+Request URL: http://www.oldBook.heyblack.top/book/
 
 Content-Type: multipart/form-data
 ```js
@@ -67,9 +69,21 @@ Content-Type: multipart/form-data
 }
 ```
 
+#### GET - 获取旧书籍信息
+GET /book/ HTTP/1.1
+
+Request URL: http://www.oldBook.heyblack.top/book/
+
+Request URL: http://www.oldBook.heyblack.top/book/?begin=0&take=2
+```js
+备注：
+以上第一种请求URL不带begin和take参数，则返回全部的旧书籍信息；
+第二种请求方式中，begin指定从第几个数据开始获取，take指定返回条数。
+示例中表示从第0个数据开始，共获取2个数据。
+```
 ---
 
-### 响应
+### 部分响应示例
 #### POST - 发布成功
 会返回新建书籍信息的id、图片url及其他基本信息
 
