@@ -1,4 +1,4 @@
-images/:
+images/
 *.sqlite3
 *.pyc
 __pycache__
