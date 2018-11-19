@@ -36,8 +36,6 @@
 ### 允许的操作
 * GET
 * POST
-* PATCH
-* DELETE
 
 ---
 
