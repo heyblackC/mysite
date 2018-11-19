@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a68d4ff1-e53d-4030-b062-0aaaf4ba3412" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/oldBook/middlewares.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/common.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/common.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/1/9fde98828b43328f2f6bba387ea898da.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/2/a42c73071a0f1fc74c9442d64d07450f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/3/4f4975b8cfd794e11fb8ff487e1199c1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/4/4f4975b8cfd794e11fb8ff487e1199c1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/5/4f4975b8cfd794e11fb8ff487e1199c1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/6/4f4975b8cfd794e11fb8ff487e1199c1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/6/a42c73071a0f1fc74c9442d64d07450f.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldBook/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/oldBook/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldBook/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldBook/migrations/0002_auto_20181118_1217.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldBook/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/oldBook/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oldBook/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/oldBook/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,7 +38,8 @@
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.31" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -64,7 +53,7 @@
           <entry key="oldbook_images" value="6" />
           <entry key="oldbook_post" value="9" />
           <entry key="oldbook_user" value="1" />
-          <entry key="py" value="16" />
+          <entry key="py" value="20" />
           <entry key="sql" value="1" />
           <entry key="sqlite_master" value="3" />
           <entry key="sqlite_sequence" value="2" />
@@ -76,7 +65,7 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="5" />
           <entry key="Markdown" value="6" />
-          <entry key="Python" value="16" />
+          <entry key="Python" value="20" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -85,51 +74,30 @@
           <entry key="Django Console" value="13" />
           <entry key="html" value="19" />
           <entry key="md" value="67" />
-          <entry key="py" value="4959" />
+          <entry key="py" value="5017" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="19" />
           <entry key="Markdown" value="67" />
-          <entry key="Python" value="4972" />
+          <entry key="Python" value="5030" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oldBook/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="75" column="42" lean-forward="true" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
+            <state relative-caret-position="386">
+              <caret line="81" column="39" lean-forward="true" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-                <marker date="1542531069652" expanded="true" signature="965:1739" ph="..." />
-                <marker date="1542531069652" expanded="true" signature="2460:2465" ph="..." />
+                <marker date="1542558249233" expanded="true" signature="965:1739" ph="..." />
+                <marker date="1542558249233" expanded="true" signature="2460:2465" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../django_1/shopsys/shopsys/apps/catalog/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -137,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oldBook/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="280">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -146,16 +114,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/oldBook/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
-              <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+            <state relative-caret-position="286">
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding>
                 <element signature="e#0#60#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oldBook/middlewares.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -173,7 +146,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://C:/u盘/python/第7章 爬虫/practice/db_module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-280">
+            <state relative-caret-position="20">
               <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
               <folding>
                 <element signature="e#15#29#0" expanded="true" />
@@ -185,7 +158,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://C:/u盘/python/第7章 爬虫/practice/alipay_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
+            <state relative-caret-position="486">
               <caret line="120" column="99" selection-start-line="120" selection-start-column="82" selection-end-line="120" selection-end-column="99" />
               <folding>
                 <element signature="e#16#46#0" expanded="true" />
@@ -195,6 +168,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -217,8 +197,9 @@
         <option value="$PROJECT_DIR$/docs/oldBook.md" />
         <option value="$PROJECT_DIR$/docs/common.md" />
         <option value="$PROJECT_DIR$/oldBook/forms.py" />
-        <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/oldBook/models.py" />
+        <option value="$PROJECT_DIR$/oldBook/middlewares.py" />
+        <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/oldBook/views.py" />
       </list>
     </option>
@@ -229,7 +210,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="335" />
     <option name="y" value="120" />
     <option name="width" value="1940" />
@@ -270,6 +251,11 @@
               <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="oldBook" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -337,9 +323,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22922252" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23257373" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -353,7 +340,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" sideWeight="0.49932975" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" weight="0.1855524" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" weight="0.18297872" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.730563" weight="0.32765958" />
       <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.49798927" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -374,13 +361,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" lean-forward="true" selection-end-line="62" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oldBook/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -442,16 +422,8 @@
     <entry file="das://66360ac0-f36c-4c38-9909-4cf0cddf3f85/schema/main/table/oldbook_images" />
     <entry file="das://59b03a9a-04b3-4250-9b26-c9ada6c3524c/schema/main/table/oldbook_book" />
     <entry file="das://59b03a9a-04b3-4250-9b26-c9ada6c3524c/schema/main/table/oldbook_image" />
-    <entry file="file://$PROJECT_DIR$/images/1/9fde98828b43328f2f6bba387ea898da.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="das://d146133d-fc6c-42c4-9c11-d46ea932f928/schema/main/table/oldbook_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/1/9fde98828b43328f2f6bba387ea898da.jpg" />
+    <entry file="das://d146133d-fc6c-42c4-9c11-d46ea932f928/schema/main/table/oldbook_user" />
     <entry file="file://$PROJECT_DIR$/docs/oldBook.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -469,74 +441,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/u盘/python/第7章 爬虫/practice/db_module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-          <folding>
-            <element signature="e#15#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/u盘/python/第7章 爬虫/practice/alipay_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="120" column="99" selection-start-line="120" selection-start-column="82" selection-end-line="120" selection-end-column="99" />
-          <folding>
-            <element signature="e#16#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://d146133d-fc6c-42c4-9c11-d46ea932f928/schema/main/table/oldbook_book" />
+    <entry file="das://d146133d-fc6c-42c4-9c11-d46ea932f928/schema/main/table/oldbook_image" />
     <entry file="file://$PROJECT_DIR$/../../django_1/shopsys/shopsys/apps/catalog/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="660">
           <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d146133d-fc6c-42c4-9c11-d46ea932f928/schema/main/table/oldbook_book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oldBook/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oldBook/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d146133d-fc6c-42c4-9c11-d46ea932f928/schema/main/table/oldbook_image">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -550,14 +463,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/u盘/python/第7章 爬虫/practice/db_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding>
+            <element signature="e#15#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oldBook/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/oldBook/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="75" column="42" lean-forward="true" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
+        <state relative-caret-position="386">
+          <caret line="81" column="39" lean-forward="true" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <marker date="1542531069652" expanded="true" signature="965:1739" ph="..." />
-            <marker date="1542531069652" expanded="true" signature="2460:2465" ph="..." />
+            <marker date="1542558249233" expanded="true" signature="965:1739" ph="..." />
+            <marker date="1542558249233" expanded="true" signature="2460:2465" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oldBook/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oldBook/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-367">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/u盘/python/第7章 爬虫/practice/alipay_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="120" column="99" selection-start-line="120" selection-start-column="82" selection-end-line="120" selection-end-column="99" />
+          <folding>
+            <element signature="e#16#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oldBook/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oldBook/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
           </folding>
         </state>
       </provider>

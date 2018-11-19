@@ -1,13 +1,15 @@
 from django.http import HttpResponse, HttpResponseNotAllowed
 from django.forms import formset_factory
 import json
-# from django.core import serializers
+from django.views.decorators.http import require_http_methods
+
 
 # import Model and Form
 from .models import Image, Book
 from .forms import ImageForm, BookForm
 
 
+@require_http_methods(["POST", "GET", "PATCH", "DELETE"])
 def index(request):
     ImageFormSet = formset_factory(ImageForm, extra=3, max_num=3)
     if request.method == 'POST':
