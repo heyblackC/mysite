@@ -5,6 +5,6 @@
 ---
 
 ## 未完成
-1. [ ] /book支持PATCH和DELETE请求
-2. [ ] /book的GET请求可以指定begin和take
+1. [x] 支持PATCH和DELETE请求，完善restful API
+2. [x] /book的GET请求可以指定begin和take
 3. [ ] 更换后端为MySQL
