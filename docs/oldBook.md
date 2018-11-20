@@ -2,7 +2,7 @@
 
 |简述|URI与操作|备注|
 |-|-|-|
-|项目根URL|http://www.oldBook.heyblack.top|项目的根URL，其他路径均相对于根URL而言|
+|项目根URL|http://oldBook.heyblack.top|项目的根URL，其他路径均相对于根URL而言|
 |旧书籍资源|`Resource: /book/`|允许`GET, POST`|
 |单个旧书籍资源|`Resource: /book/<id>`|允许 `GET, PATCH, DELETE`|
 
