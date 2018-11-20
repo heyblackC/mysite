@@ -43,7 +43,7 @@
 #### POST - 发布一个新的旧书籍信息
 POST /book/ HTTP/1.1
 
-Request URL: http://www.oldBook.heyblack.top/book/
+Request URL: http://oldBook.heyblack.top/book/
 
 Content-Type: multipart/form-data
 ```js
@@ -70,9 +70,9 @@ Content-Type: multipart/form-data
 #### GET - 获取旧书籍信息
 GET /book/ HTTP/1.1
 
-Request URL: http://www.oldBook.heyblack.top/book/
+Request URL: http://oldBook.heyblack.top/book/
 
-Request URL: http://www.oldBook.heyblack.top/book/?begin=0&take=2
+Request URL: http://oldBook.heyblack.top/book/?begin=0&take=2
 ```js
 备注：
 以上第一种请求URL不带begin和take参数，则返回全部的旧书籍信息；
