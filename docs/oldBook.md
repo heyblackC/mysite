@@ -85,6 +85,8 @@ Request URL: http://oldBook.heyblack.top/book/?begin=0&take=2
 #### POST - 发布成功
 会返回新建书籍信息的id、图片url及其他基本信息
 
+Request URL: http://oldbook.heyblack.top/book/
+
 HTTP/1.1 200 OK
 
 Content-Type: application/json
@@ -109,6 +111,8 @@ Content-Type: application/json
 ```
 
 #### GET - 获取旧书籍资源
+
+Request URL: http://oldbook.heyblack.top/book/
 
 HTTP/1.1 200 OK
 
