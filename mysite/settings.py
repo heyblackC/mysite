@@ -25,7 +25,7 @@ SECRET_KEY = 'mkl=8q9thr9j#==9xv%$r+y=s(b4bpa6sby(l%k7&njubws6#d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -77,11 +77,28 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+
 }
+if platform.system() == 'Windows':
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'old_book',  # 数据库名
+            'USER': 'root',  # 数据库账户名
+            'PASSWORD': os.environ['SHOPSYS_DB_PASS'],  # 数据库密码，为安全起见，应从系统环境变量中获取os.environ['SHOPSYS_DB_PASS']
+            'HOST': '127.0.0.1',  # 数据库服务器IP
+            'PORT': '3306',  # 端口
+        }
+
+    }
+
 
 
 # Password validation
@@ -116,8 +133,11 @@ USE_L10N = True
 
 USE_TZ = True
 
+FILE_UPLOAD_MAX_MEMORY_SIZE = 100*1024*1024
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+
