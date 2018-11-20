@@ -2,7 +2,7 @@ from django.db import models
 import hashlib
 import json
 
-WEB_URL = "http://www.oldBook.heyblack.top/"
+WEB_URL = "http://oldBook.heyblack.top/"
 
 
 class Book(models.Model):
