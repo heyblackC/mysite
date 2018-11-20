@@ -106,3 +106,49 @@ Content-Type: application/json
     "title": "asdadasdasdasda",
     "contact_type": 0
 }
+```
+
+#### GET - 获取旧书籍资源
+
+HTTP/1.1 200 OK
+
+Content-Type: application/json
+
+```js
+[
+    {
+        "title": "C++程序设计基础（第4版）（上）",
+        "author": "Sanjit K. Mitra",
+        "wear_degree": 0,
+        "description": "这是一本电信学子普遍很...",
+        "created_at": "2018-11-20 05:52:35",
+        "contact_type": 0,
+        "image_set": [
+            "http://oldBook.heyblack.top/images/2/9fde98828b43328f2f6bba387ea898da.jpg",
+            "http://oldBook.heyblack.top/images/2/a42c73071a0f1fc74c9442d64d07450f.jpg"
+        ],
+        "publisher": "电子工业出版社",
+        "id": 2,
+        "page_view": 0,
+        "contact": "15521377055",
+        "expires": "2019-12-11 09:17:10"
+    },
+    {
+        "title": "C++程序设计基础（第4版）（上）",
+        "author": "周荷琴",
+        "wear_degree": 0,
+        "description": "这是一本程序员普遍很...",
+        "created_at": "2018-11-20 05:51:22",
+        "contact_type": 0,
+        "image_set": [
+            "http://oldBook.heyblack.top/images/1/4f4975b8cfd794e11fb8ff487e1199c1.jpg",
+            "http://oldBook.heyblack.top/images/1/d00b1e9890616b43486bebc27c567e5f.jpg"
+        ],
+        "publisher": "电子工业出版社",
+        "id": 1,
+        "page_view": 0,
+        "contact": "15521377055",
+        "expires": "2019-12-11 09:17:10"
+    }
+]
+```
