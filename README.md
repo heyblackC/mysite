@@ -12,7 +12,7 @@
 2. [x] /book的GET请求可以指定begin和take
 3. [x] 更换后端为MySQL
 4. [x] 部署至服务器上
-5. [x] webhook搭建
+5. [ ] webhook搭建
 6. [ ] image使用cdn或者对象存储，并且提供缩略图
 7. [ ] 全部接口使用cookies维持对话
 8. [ ] page_view计数
