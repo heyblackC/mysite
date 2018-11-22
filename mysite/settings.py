@@ -32,7 +32,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     # 'django.contrib.admin',
-    'django.contrib.auth',
+    # 'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -40,6 +40,12 @@ INSTALLED_APPS = [
     'oldBook.apps.OldbookConfig',
     'rest_framework',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    )
+}
 
 SESSION_SAVE_EVERY_REQUEST = True
 SESSION_COOKIE_AGE = 900
