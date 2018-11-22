@@ -1,4 +1,4 @@
-# mysite
+﻿# mysite
 ## 旧书籍系统后台项目代码
 这是我和同学合作进行的大作业项目，后期希望能够投入到学院内实际使用。
 
@@ -12,7 +12,7 @@
 2. [x] /book的GET请求可以指定begin和take
 3. [x] 更换后端为MySQL
 4. [x] 部署至服务器上
-5. [ ] webhook搭建
+5. [x] webhook搭建
 6. [ ] image使用cdn或者对象存储，并且提供缩略图
 7. [ ] 全部接口使用cookies维持对话
 8. [ ] page_view计数
