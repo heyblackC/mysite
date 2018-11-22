@@ -1,11 +1,40 @@
 from django.db import models
 import hashlib
 import json
-
+from .hasher import make_password, verify
 WEB_URL = "http://oldBook.heyblack.top/"
 
 
+class User(models.Model):
+    # openID = models.CharField("用户ID", max_length=100)
+    username = models.CharField("用户名", max_length=25, unique=True)
+    avatar = models.URLField("用户头像URL", blank=True)
+    password = models.CharField("名称", max_length=128)
+
+    @classmethod
+    def create_user(cls, username, password, avatar=''):
+        if not username or not password:
+            raise ValueError('The given username and password must be set')
+
+        user = cls(username=username,
+                   password=make_password(password),
+                   avatar=avatar)
+        user.save()
+        return user
+
+    def verify(self, raw_password):
+        return verify(raw_password, self.password)
+
+    def obj_dic(self):
+        return {
+            "id": self.id,
+            "username": self.username,
+            "avatar": self.avatar
+        }
+
+
 class Book(models.Model):
+    user = models.ForeignKey(User, default=None, on_delete=models.CASCADE)
     page_view = models.IntegerField("浏览量", default=0)
     author = models.CharField("作者", max_length=50)
     title = models.CharField("标题", max_length=50)
@@ -49,7 +78,10 @@ class Book(models.Model):
             "wear_degree": self.wear_degree,
             "contact": self.contact,
             "contact_type": self.contact_type,
-            "image_set": image_set
+            "image_set": image_set,
+            "username": self.user.username,
+            "avatar": self.user.avatar
+
         }
         return json_dic
 
@@ -75,8 +107,3 @@ class Image(models.Model):
     book = models.ForeignKey(Book, default=None, on_delete=models.CASCADE)
     image = models.ImageField("图片", upload_to=get_hash_filename)
 
-
-class User(models.Model):
-    # openID = models.CharField("用户ID", max_length=100)
-    nick = models.CharField("名称", max_length=20)
-    avatar = models.URLField("用户头像URL")

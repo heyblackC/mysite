@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     'rest_framework',
 ]
 
+SESSION_SAVE_EVERY_REQUEST = True
+SESSION_COOKIE_AGE = 900
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
