@@ -33,3 +33,4 @@
 另外，sessionid的过期日期有问题，待修复；
 
 form的validate仅支持form-data，不支持json数据，极其不友好，应改为serializer。
+
