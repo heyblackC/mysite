@@ -92,11 +92,27 @@ def detail(request, pk):
     elif request.method == 'PATCH':
         serializer = BookSerializer(book, data=request.data, partial=True)
         if serializer.is_valid():
+
+            if book.user.id != int(request.session['user_id']):
+                response_error = {
+                    "status": "error",
+                    "message": "you are not allowd to modify book info owned by others."
+                }
+                return Response(response_error, status=status.HTTP_400_BAD_REQUEST)
+
             serializer.save()
             return Response(book.dic_data())
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     elif request.method == 'DELETE':
+
+        if book.user.id != int(request.session['user_id']):
+            response_error = {
+                "status": "error",
+                "message": "you are not allowd to modify book info owned by others."
+            }
+            return Response(response_error, status=status.HTTP_400_BAD_REQUEST)
+
         book.delete()
         response_dic = {
             "status": "success",
