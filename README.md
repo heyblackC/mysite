@@ -17,10 +17,10 @@
 7. [x] 全部接口使用session维持对话
 8. [ ] page_view计数
 9. [ ] 后台逻辑完善，比如expires过期时间必须为未来，并编写自动化测试单元
-10. [ ] 将form替换为serializer，支持json数据
+10. [x] 将form替换为serializer，支持json数据，除了GET和FILES类型外
 11. [ ] 考虑index页面和detail页面的区别，对数据进行部分返回
 12. [ ] 敏感字段，如contact和password，应该采用加密传输方式
-
+13. [ ] 写一个查重用户名的接口
 ---
 
 ## 工程手札
@@ -40,4 +40,9 @@ form的validate仅支持form-data，不支持json数据，极其不友好，应�
 
 ---
 
+2018/11/23 17:21
+
+完善了user接口，并编写了`user.md`接口文档，后台逻辑目前较为完善
+
+---
 

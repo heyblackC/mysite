@@ -9,8 +9,8 @@ from rest_framework import status
 
 # import Model and Form
 from .models import Image, Book, User
-from .forms import ImageForm, BookForm, UserForm
-from .serializers import BookSerializer
+from .forms import ImageForm, BookForm
+from .serializers import BookSerializer, UserSerializer, UserSerializerWithoutUniqueName
 from .middlewares import require_login
 
 
@@ -106,15 +106,16 @@ def detail(request, pk):
 
 @api_view(['POST'])
 def user_create(request):
-    userForm = UserForm(request.POST)
-    if userForm.is_valid():
+    serializer = UserSerializer(data=request.data)
+    if serializer.is_valid():
+        data_dict = serializer.data
         try:
-            avatar = request.POST['avatar']
+            avatar = data_dict['avatar']
         except KeyError:
             avatar = ''
 
-        user = User.create_user(request.POST['username'],
-                                request.POST['password'], avatar)
+        user = User.create_user(data_dict['username'],
+                                data_dict['password'], avatar)
         request.session['user_id'] = user.id
         request.session.set_expiry(15*60)
         return Response(user.obj_dic(), status=status.HTTP_200_OK,
@@ -122,7 +123,7 @@ def user_create(request):
     else:
         error_dic = {
             "status": "error",
-            "message": userForm.errors,
+            "message": serializer.errors,
         }
         return HttpResponse(json.dumps(error_dic),
                             content_type="application/json")
@@ -130,15 +131,16 @@ def user_create(request):
 
 @api_view(['POST'])
 def user_verify(request):
-    try:
-        username = request.POST['username']
-        password = request.POST['password']
-    except KeyError:
+    serializer = UserSerializerWithoutUniqueName(data=request.data)
+    if not serializer.is_valid():
         response_error = {
             "status": "error",
-            "message": "please insure username and password are not null"
+            "message": serializer.errors
         }
         return Response(response_error, status=status.HTTP_400_BAD_REQUEST)
+
+    username = serializer.data["username"]
+    password = serializer.data["password"]
 
     try:
         user = User.objects.get(username=username)
@@ -152,7 +154,8 @@ def user_verify(request):
     if not verify_result:
         return Response({
             "status": "success",
-            "verify": "fail"
+            "verify": "fail",
+            "message": "password is not correct!"
         })
 
     request.session['user_id'] = user.id
