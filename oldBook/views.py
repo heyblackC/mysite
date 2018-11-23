@@ -116,6 +116,7 @@ def user_create(request):
         user = User.create_user(request.POST['username'],
                                 request.POST['password'], avatar)
         request.session['user_id'] = user.id
+        request.session.set_expiry(15*60)
         return Response(user.obj_dic(), status=status.HTTP_200_OK,
                         content_type="application/json")
     else:
@@ -155,6 +156,7 @@ def user_verify(request):
         })
 
     request.session['user_id'] = user.id
+    request.session.set_expiry(15*60)
     return Response({
         "status": "success",
         "verify": "pass"

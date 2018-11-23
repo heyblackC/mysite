@@ -1,10 +1,11 @@
-# oldBook API
+# book API
 
 |简述|URI与操作|备注|
 |-|-|-|
 |项目根URL|http://oldBook.heyblack.top|项目的根URL，其他路径均相对于根URL而言|
 |旧书籍资源|`Resource: /book/`|允许`GET, POST`|
 |单个旧书籍资源|`Resource: /book/<id>`|允许 `GET, PATCH, DELETE`|
+|权限授予|授权方法详见`user.md`|除`/book/`的`GET`请求外，其他请求均需要先进行用户`login`或`create`|
 
 ---
 ## 旧书籍对象
@@ -83,7 +84,7 @@ Request URL: http://oldBook.heyblack.top/book/?begin=0&take=2
 
 ### 部分响应示例
 #### POST - 发布成功
-会返回新建书籍信息的id、图片url及其他基本信息
+会返回新建书籍信息的**id**、**图片url**、**所属用户**及其他基本信息
 
 Request URL: http://oldbook.heyblack.top/book/
 
@@ -106,7 +107,9 @@ Content-Type: application/json
     "wear_degree": 0,
     "contact": "15521377055",
     "title": "asdadasdasdasda",
-    "contact_type": 0
+    "contact_type": 0,
+    "username": "heyblack",
+    "avatar": "http://..."
 }
 ```
 
@@ -135,7 +138,9 @@ Content-Type: application/json
         "id": 2,
         "page_view": 0,
         "contact": "15521377055",
-        "expires": "2019-12-11 09:17:10"
+        "expires": "2019-12-11 09:17:10",
+        "username": "heyblack",
+        "avatar": "http://..."
     },
     {
         "title": "C++程序设计基础（第4版）（上）",
@@ -152,7 +157,9 @@ Content-Type: application/json
         "id": 1,
         "page_view": 0,
         "contact": "15521377055",
-        "expires": "2019-12-11 09:17:10"
+        "expires": "2019-12-11 09:17:10",
+        "username": "heyblack",
+        "avatar": "http://..."
     }
 ]
 ```
